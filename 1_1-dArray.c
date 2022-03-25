@@ -120,7 +120,7 @@ void misTrm(int ar[], int n){
 void sepPNZ(int ar[], int n){
     int i;
     int pcnt=0, ncnt=0, cnt=0;
-    int pa[10], na[10], za[10];
+    int pa[n], na[n], za[n];
     for(i=0; i<n; i++){
         if(ar[i] > 0){
             pa[pcnt] = ar[i];
@@ -235,8 +235,8 @@ void uni(int ara[], int arb[], int n){
         }
         if(flg == 0)
             printf("%d\t", arb[i]);
+        flg=0;
     }
-    flg=0;
 }
 void inte(int ara[], int arb[], int n){
     int  i, j;
@@ -336,6 +336,7 @@ int main(){
                 scanf("%d", &b[i]);
             printf("\n---Output---\n");
             inte(a, b, n);
+            break;
         default: printf("Wrong input");
     }
 }
