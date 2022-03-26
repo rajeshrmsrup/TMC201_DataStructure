@@ -75,6 +75,34 @@ void prime(int ar[], int n){
             printf("%d\t", ar[i]);
     }
 }
+//Function to implement case 2.
+void nestSwitch(int ar[], int n, int ch2){
+    int i, cnt=0;
+    switch(ch2){
+        case 1:
+            for(int i=0; i<n; i++)
+                if(palindrome(ar[i]) == 0)
+                    cnt++;
+            printf("\n---Output---\nTotal no. of palindrome numbers = %d", cnt);
+            break;
+        case 2:
+            for(int i=0; i<n; i++)
+                if(armstrong(ar[i]) == 0)
+                    cnt++;
+            printf("\n---Output---\nTotal no. of armstrong numbers = %d", cnt);
+            break;
+        case 3:
+            printf("\n---Output---\n");
+            for(int i=0; i<n; i++)
+                printf("Sum of %d = %d\n", ar[i], sum(ar[i]));
+            break;
+        case 4:
+            printf("\n---Output---\nPrime numbers are = ");
+            prime(ar, n);
+            break;
+        default: printf("Not a valid choice: ");
+    }
+}
 
 //3. Function to check AP or not.
 void ap(int ar[], int n){
@@ -106,14 +134,20 @@ void ap(int ar[], int n){
 
 //4. function to find missing term.
 void misTrm(int ar[], int n){
-    int i, d;
+    int i, d, flg=0;
     d = ar[1] - ar[0];
     for(i=1; i<n-1; i++){
-        if(d == ar[i+1]-ar[i])
+        if(d == ar[i+1]-ar[i]){
             d = ar[i+1]-ar[i];
+            flg=0;
+        }
         else
-            printf("the missing term is %d", ar[i]+d);
+            flg++;
     }
+    if(flg == 0)
+        printf("No missing term");
+    else
+        printf("the missing term is %d", ar[i]+d);
 }
 
 //5. Function to separate +ve, -ve, & 0 elements.
@@ -252,7 +286,7 @@ void inte(int ara[], int arb[], int n){
 
 
 int main(){
-    int n, i, ch1, ch2, ch3, cnt=0;
+    int n, i, ch1, ch2, ch3;
     printf("Enter the size: ");
     scanf("%d", &n);
     int a[n], b[n];
@@ -275,6 +309,7 @@ int main(){
     printf("\n\t1. 4th Non-repeating element\n\t2. 4th Repeating element");
     printf("\n8. Display the frequency of each element.");
     printf("\n9. Print Union & Intersection.");
+    printf("\n10. Exit");
     printf("\n--------------------------------------\n");
     printf("\nEnter your choice above menu: ");
     scanf("%d", &ch1);
@@ -286,32 +321,12 @@ int main(){
         case 2:
             printf("Select sub choice: ");
             scanf("%d", &ch2);
-            switch(ch2){
-                case 1:
-                    for(int i=0; i<n; i++)
-                        if(palindrome(a[i]) == 0)
-                            cnt++;
-                        printf("\n---Output---\nTotal no. of palindrome numbers = %d", cnt);
-                    break;
-                case 2:
-                    for(int i=0; i<n; i++)
-                        if(armstrong(a[i]) == 0)
-                            cnt++;
-                        printf("\n---Output---\nTotal no. of armstrong numbers = %d", cnt);
-                    break;
-                case 3:
-                    printf("\n---Output---\n");
-                    for(int i=0; i<n; i++)
-                        printf("Sum of %d = %d\n", a[i], sum(a[i]));
-                    break;
-                case 4:
-                    printf("\n---Output---\nPrime numbers are = ");
-                    prime(a, n);
-                    break;
-                    default: printf("Not a valid choice: ");
-            } break;
+            nestSwitch(a, n, ch2);
+            break;
         case 3: ap(a, n); break;
-        case 4: misTrm(a, n); break;
+        case 4:
+            printf("\n---Output---\n");
+            misTrm(a, n); break;
         case 5: sepPNZ(a, n); break;
         case 6: sepPN(a, n);
             printf("\n---output---\n");
@@ -337,6 +352,7 @@ int main(){
             printf("\n---Output---\n");
             inte(a, b, n);
             break;
+        case 10: exit(1);
         default: printf("Wrong input");
     }
 }
