@@ -284,7 +284,6 @@ void inte(int ara[], int arb[], int n){
     }
 }
 
-
 int main(){
     int n, i, ch1, ch2, ch3;
     printf("Enter the size: ");
