@@ -286,7 +286,7 @@ void inte(int ara[], int arb[], int n){
 
 int main(){
     int n, i, ch1, ch2, ch3;
-    printf("Enter the size: ");
+    printf("Enter the total number of elements: ");
     scanf("%d", &n);
     int a[n], b[n];
     printf("---Enter %d elements---\n", n);
