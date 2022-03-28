@@ -299,7 +299,7 @@ int main(){
     printf("\n\t1. Total no. of palindrome.");
     printf("\n\t2. Total no. of armstrong.");
     printf("\n\t3. Sum of digit of each element.");
-    printf("\n\t4. Total no. of Prime.");
+    printf("\n\t4. Prime numbers.");
     printf("\n3. Check series is AP or not.");
     printf("\n4. Find and print missing term in AP.");
     printf("\n5. Separate +ve, -ve, & 0 elements.");
