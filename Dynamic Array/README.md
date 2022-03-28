@@ -1,7 +1,7 @@
 <h1>Dynamic Memory Allocation--Array</h1>
 <h3>Q1. Program to store n elements in dynamic array and find & display Even and Odd elements</h3>
 
-```ruby
+```c
 #include<stdio.h>
 #include<stdlib.h>
 void evOdd(int *ar, int n){
@@ -35,7 +35,7 @@ int main(){
 <h4>&emsp;3. Sum of digits of each element.</h4>
 <h4>&emsp;4. Print Prime numbers and Count.</h4>
 
-```
+```c
 #include<stdio.h>
 #include<stdlib.h>
 //Function to find Palindrome.
@@ -148,7 +148,7 @@ int main(){
 ```
 <h3>Q3. Program to check whether series is AP or Not.</h3>
 
-```
+```c
 #include<stdio.h>
 #include<stdlib.h>
 void ap(int *ar, int n){
@@ -191,7 +191,7 @@ int main(){
 ```
 <h3>Q4. Program to find and print missing element in AP series.</h3>
 
-```
+```c
 #include<stdio.h>
 #include<stdlib.h>
 void misTrm(int *ar, int n){
