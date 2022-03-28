@@ -1,7 +1,7 @@
 <h1>Dynamic Memory Allocation--Array</h1>
 <h3>Q1. Program to store n elements in dynamic array and find & display Even and Odd elements</h3>
 
-```
+```ruby
 #include<stdio.h>
 #include<stdlib.h>
 void evOdd(int *ar, int n){
