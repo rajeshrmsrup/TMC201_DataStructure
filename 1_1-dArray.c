@@ -109,10 +109,8 @@ void ap(int ar[], int n){
     int i, d, flg=0;
     d = ar[1] - ar[0];
     for(i=1; i<n-1; i++){
-        if(d == ar[i+1]-ar[i]){
-            d = ar[i+1]-ar[i];
+        if(d == ar[i+1]-ar[i])
             flg=0;
-        }
         else{
             flg++;
             break;
