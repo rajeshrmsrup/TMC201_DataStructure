@@ -137,17 +137,17 @@ void misTrm(int ar[], int n){
     int i, d, flg=0;
     d = ar[1] - ar[0];
     for(i=1; i<n-1; i++){
-        if(d == ar[i+1]-ar[i]){
-            d = ar[i+1]-ar[i];
+        if(d == ar[i+1]-ar[i])
             flg=0;
-        }
-        else
+        else{
             flg++;
+            break;
+        }
     }
     if(flg == 0)
         printf("No missing term");
     else
-        printf("the missing term is %d", ar[i]+d);
+        printf("The missing term is %d", ar[i]+d);
 }
 
 //5. Function to separate +ve, -ve, & 0 elements.
@@ -325,7 +325,8 @@ int main(){
         case 3: ap(a, n); break;
         case 4:
             printf("\n---Output---\n");
-            misTrm(a, n); break;
+            misTrm(a, n);
+            break;
         case 5: sepPNZ(a, n); break;
         case 6: sepPN(a, n);
             printf("\n---output---\n");
