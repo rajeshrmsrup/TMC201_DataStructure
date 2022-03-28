@@ -50,9 +50,9 @@ int armstrong(int num){
     else
         return 1;
 }
-//To find sum of digits.
+//To calculate sum of digits.
 int sum(int num){
-    int tmp, rem, sum=0;
+    int rem, sum=0;
     while(num != 0){
         rem = num%10;
         sum += rem;
@@ -89,7 +89,7 @@ void nestSwitch(int ar[], int n, int ch2){
             for(int i=0; i<n; i++)
                 if(armstrong(ar[i]) == 0)
                     cnt++;
-            printf("\n---Output---\nTotal no. of armstrong numbers = %d", cnt);
+            printf("\n---Output---\nTotal no. of Armstrong numbers = %d", cnt);
             break;
         case 3:
             printf("\n---Output---\n");
@@ -275,7 +275,7 @@ void uni(int ara[], int arb[], int n){
 void inte(int ara[], int arb[], int n){
     int  i, j;
     uni(ara, arb, n);
-    printf("\nIntersecton = ");
+    printf("\nIntersection = ");
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
             if(arb[i] == ara[j])
@@ -299,7 +299,7 @@ int main(){
     printf("\n\t1. Total no. of palindrome.");
     printf("\n\t2. Total no. of armstrong.");
     printf("\n\t3. Sum of digit of each element.");
-    printf("\n\t4. Prime numbers.");
+    printf("\n\t4. Total no. of Prime.");
     printf("\n3. Check series is AP or not.");
     printf("\n4. Find and print missing term in AP.");
     printf("\n5. Separate +ve, -ve, & 0 elements.");
