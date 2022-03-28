@@ -1,4 +1,4 @@
-<h3>Q1. WAP to store n elements in an dynamic and find & display Even and Odd elements</h3>
+<h3>Q1. WAP to store n elements in dynamic array and find & display Even and Odd elements</h3>
 
 ```
 #include<stdio.h>
