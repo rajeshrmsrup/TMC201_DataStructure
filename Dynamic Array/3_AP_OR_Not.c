@@ -23,7 +23,7 @@ void ap(int *ar, int n){
         for(i=0; i<n; i++){
             printf("%d\t", ar[i]);
         }
-        printf("Series is not AP.");
+        printf("Series is not AP.\n");
     }
 }
 int main(){
@@ -34,6 +34,6 @@ int main(){
     int *ptr = (int*)malloc(n*sizeof(int));
 
     for(i=0; i<n; i++)
-        scanf("%d", &ptr[i]);
+        scanf("%d", ptr+i);
     ap(ptr, n);
 }
