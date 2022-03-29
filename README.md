@@ -38,8 +38,10 @@ void display(int stack[], int top){
     if(top == -1)
         printf("Stack is empty.\n");
     else{
-        for(i=top; i>=0; i--)
-            printf("%d\n", stack[i]);
+        while(top>=0){
+            printf("%d\n", stack[top]);
+            top--;
+        }
     }
 }
 
