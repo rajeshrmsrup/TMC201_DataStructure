@@ -71,7 +71,6 @@ int main(){
                 break;
             case 4:
                 printf("\n---Output---\n");
-                printf("Peek of stack is ");
                 peek(stack, top);
                 break;
             case 0: exit(1);
