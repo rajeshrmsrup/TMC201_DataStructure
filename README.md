@@ -7,7 +7,6 @@ Data structure Class, Lab, &amp; TermWork, Practice problems with source code us
 #define MAX 5
 //Function to PUSH Operation.
 int push(int stack[], int top, int x){
-    int i;
     if(top == MAX-1)
         printf("\n---Output---\nStack is overflow.\n");
     else{
