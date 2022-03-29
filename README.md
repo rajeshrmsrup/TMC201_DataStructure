@@ -36,7 +36,7 @@ void display(int stack[], int top){
         printf("Stack is empty.\n");
     else{
         for(i=top; i>=0; i--)
-            printf("%d\t", stack[i]);
+            printf("%d\n", stack[i]);
     }
 }
 
