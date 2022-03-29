@@ -49,7 +49,7 @@ int main(){
     do{
         printf("\n---Operations Menu---\n");
         printf("0. Exit\n1. Push\n2. Pop\n3. Display\n4. Peek\n");
-        printf("\nEnter your choice: ");
+        printf("Enter your choice: ");
         scanf("%d", &ch);
         switch(ch){
             case 1:
@@ -59,24 +59,23 @@ int main(){
                 display(stack, top);
                 break;
             case 2:
-                printf("---Output---\n");
+                printf("\n---Output---\n");
                 top = pop(stack, top);
                 display(stack, top);
                 break;
             case 3:
-                printf("---Output---\n");
+                printf("\n---Output---\n");
                 display(stack, top);
                 break;
             case 4:
-                printf("---Output---\n");
+                printf("\n---Output---\n");
                 printf("Peek of stack is ");
                 peek(top);
                 break;
             case 0: exit(1);
             default: printf("Wrong input--Enter a valid input");
         }
-        printf("\nContinue...");
+        printf("\n\nContinue...");
     }while(ch != 0);
 }
-
 ```
