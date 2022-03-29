@@ -46,8 +46,11 @@ void display(int stack[], int top){
 }
 
 //Function for Peek of Stack.
-void peek(int top){
-    printf("%d\n", top+1);
+void peek(int stack[], int top){
+    if(top == -1)
+        printf("Stack is empty");
+    else
+        printf("Peek of stack is %d\n", stack[top]);
 }
 
 int main(){
@@ -73,8 +76,7 @@ int main(){
                 break;
             case 4:
                 printf("\n---Output---\n");
-                printf("Peek of stack is ");
-                peek(top);
+                peek(stack, top);
                 break;
             case 0: exit(1);
             default: printf("Wrong input--Enter a valid input");
