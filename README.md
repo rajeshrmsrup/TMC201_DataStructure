@@ -6,10 +6,13 @@ Data structure Class, Lab, &amp; TermWork, Practice problems with source code us
 #include<stdio.h>
 #define MAX 5
 //Function to PUSH Operation.
-int push(int stack[], int top, int x){
+int push(int stack[], int top){
+    int x;
     if(top == MAX-1)
         printf("\n---Output---\nStack is overflow.\n");
     else{
+        printf("Enter an element: ");
+        scanf("%d", &x);
         top++;
         stack[top] = x;
     }
@@ -54,9 +57,7 @@ int main(){
         scanf("%d", &ch);
         switch(ch){
             case 1:
-                printf("Enter an element: ");
-                scanf("%d", &x);
-                top = push(stack, top, x);
+                top = push(stack, top);
                 display(stack, top);
                 break;
             case 2:
