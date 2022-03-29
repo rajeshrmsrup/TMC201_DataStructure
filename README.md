@@ -34,8 +34,10 @@ void display(int stack[], int top){
     int i;
     if(top == -1)
         printf("Stack is empty.\n");
-    for(i=0; i<=top; i++)
-        printf("%d\t", stack[i]);
+    else{
+        for(i=0; i<=top; i++)
+            printf("%d\t", stack[i]);
+    }
 }
 
 //Function for Peek of Stack.
