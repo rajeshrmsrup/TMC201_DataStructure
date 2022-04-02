@@ -1,3 +1,4 @@
+//Program to implement STACK using "Call By Reference".
 #include<stdio.h>
 #define MAX 5
 //Function for PUSH
