@@ -33,7 +33,7 @@ void display(int q[], int rear, int front){
     printf("\t%d", q[tmp]);
 }
 //Function to PEEK
-void peek(int q[], int rear, int front){
+void peek(int q[], int front){
     printf("\tPeek of queue is %d", q[front]);
 }
 int main(){
@@ -75,7 +75,7 @@ int main(){
             if(front == -1)
                 printf("\tQueue is Empty\n");
             else
-                peek(q, rear, front);
+                peek(q, front);
             break;
         }
 
