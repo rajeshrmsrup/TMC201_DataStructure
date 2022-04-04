@@ -1,11 +1,11 @@
 # TMC201_DataStructure
 Data structure Class, Lab, &amp; TermWork, Practice problems with source code using C language
 
-## Q1. Program to implement STACK using "call by value".
+## Q1. Program to implement STACK using "Call By Value".
 ```c
 #include<stdio.h>
 #define MAX 5
-//Function to PUSH operation.
+//Function for PUSH operation.
 int push(int stack[], int top){
     int x;
     printf("Enter an element: ");
@@ -15,14 +15,14 @@ int push(int stack[], int top){
     return top;
 }
 
-//Function to POP operation.
+//Function for POP operation.
 int pop(int stack[], int top){
     printf("\tThe poped element is %d\n", stack[top]);
     top--;
     return top;
 }
 
-//Function to DISPLAY the Stack.
+//Function for DISPLAY the Stack.
 void display(int stack[], int top){
     while(top>=0){
         printf("\n\t%d", stack[top]);
@@ -72,6 +72,106 @@ int main(){
         }
     }while(ch <= 4);
 }
+/***************OUTPUT****************
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 10
+
+---Your Stack---
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 20
+
+---Your Stack---
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 30
+
+---Your Stack---
+	30
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 30
+
+---Your Stack---
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 4
+	Peek of stack is 20
+
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 20
+
+---Your Stack---
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 10
+
+---Your Stack---
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	Stack is Underflow
+
+---Your Stack---
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 3
+
+---Output---
+	Stack is empty
+*************************************/
 ```
 ## Q2. Program to implement STACK using "call by Reference".
 
@@ -139,8 +239,108 @@ int main(){
         }
     }while(ch <= 4);
 }
+/***************OUTPUT****************
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 10
+
+---Your Stack---
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 20
+
+---Your Stack---
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 1
+Enter an element: 30
+
+---Your Stack---
+	30
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 30
+
+---Your Stack---
+	20
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 4
+	Peek of stack is 20
+
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 20
+
+---Your Stack---
+	10
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	The poped element is 10
+
+---Your Stack---
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 2
+	Stack is Underflow
+
+---Your Stack---
+---Menu---
+1. Push
+2. Pop
+3. Display
+4. Peek
+5. Exit
+Enter your choice: 3
+
+---Output---
+	Stack is empty
+*************************************/
 ```
-## Q1. Program to implement QUEUE using "call by value".
+## Q3. Program to implement QUEUE using "call by value".
 
 ```c
 #include<stdio.h>
