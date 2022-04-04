@@ -173,7 +173,7 @@ Enter your choice: 3
 	Stack is empty
 *************************************/
 ```
-## Q2. Program to implement STACK using "call by Reference".
+## Q2. Program to implement STACK using "Call By Reference".
 
 ```c
 #include<stdio.h>
@@ -340,7 +340,7 @@ Enter your choice: 3
 	Stack is empty
 *************************************/
 ```
-## Q3. Program to implement QUEUE using "call by value".
+## Q3. Program to implement QUEUE using "Call By Value".
 
 ```c
 #include<stdio.h>
