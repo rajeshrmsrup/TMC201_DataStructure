@@ -1,4 +1,3 @@
-//Rajesh Kumar, MCA-2nd, 31, Sec-B.
 /*Program to create linked list and then...
 1. Count total no. of nodes
 2. Count nodes having Odd info
