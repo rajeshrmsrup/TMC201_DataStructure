@@ -79,6 +79,7 @@ int main(){
             front = serve(q, front, rear);
             if(front == -1)
                 rear=-1;
+		break;
         case 3:
             display(q, front, rear);
         }
