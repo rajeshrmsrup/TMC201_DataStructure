@@ -1,3 +1,4 @@
+//Program to create "Singly Linked List" and Insert an element at "Right Hand".
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct node{
