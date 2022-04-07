@@ -92,5 +92,141 @@ void display(int q[], int front, int rear){
     }
 }
 /***************OUTPUT***************
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 10
 
+	Queue =	10
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 20
+
+	Queue =	10	20
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 30
+
+	Queue =	10	20	30
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 40
+
+	Queue =	10	20	30	40
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 50
+
+	Queue =	10	20	30	40	50
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+	Queue is Full
+
+	Queue =	10	20	30	40	50
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 10	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 20	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 1
+
+	Queue =	30	40	50	1
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter an element: 2
+
+	Queue =	30	40	50	1	2
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+	Queue is Full
+
+	Queue =	30	40	50	1	2
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 30	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 40	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 50	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 1	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Deleted element is 2	
+---Menu---
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 2
+	Queue is Empty
 ************************************/
