@@ -1,9 +1,3 @@
-/*
-Name:
-Course/Sem:
-Roll No:
-Sec:
-*/
 //Program to implement "Circular Queue" using Linked List by "Single Pointer".
 #include<stdio.h>
 #include<stdlib.h>
