@@ -1,9 +1,3 @@
-/*
-Name:
-Course/Sem:
-Sec:
-Roll No:
-*/
 //Program to implement Queue using Linked List with Double Pointer.
 #include<stdio.h>
 #include<stdlib.h>
