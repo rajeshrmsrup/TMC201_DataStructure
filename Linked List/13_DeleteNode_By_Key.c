@@ -25,7 +25,7 @@ int main(){
             break;
         case 3:
             if(top==NULL)
-                printf("\tStack is Empty\n");
+                printf("\tList is Empty\n");
             else
                 display(top);
         }
