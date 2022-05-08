@@ -47,7 +47,7 @@ node* push(node *top){
     }
     return top;
 }
-//2. function for del key DISPLAY
+//2. function for delete node by key
 node *delKey(node *top){
     int key, cnt=0;
     node *tmp1, *tmp;
