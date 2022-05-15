@@ -1,9 +1,3 @@
-/*
-Name:           Rajesh Kumar
-Course/Sem:     MCA-2nd
-Roll No:        31
-sec:            B
-*/
 //Program to implement Doubly Linked List and Delete a node by searching key.
 #include<stdio.h>
 #include<stdlib.h>
