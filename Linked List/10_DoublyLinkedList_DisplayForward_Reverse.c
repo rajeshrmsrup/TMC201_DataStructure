@@ -1,3 +1,4 @@
+//Program to implement "Doubly linked list" and Display list "Forward" & "Reverse"
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct DoublyLL{
@@ -85,3 +86,52 @@ void displayReverse(node *right){
             right = right->prv;
         }
 }
+/***************OUTPUT***************
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 1
+Enter an element: 10
+
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 1
+Enter an element: 5
+
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 1
+Enter an element: 60
+
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 1
+Enter an element: 25
+
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 1
+Enter an element: 36
+
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 2
+        5       10      25      36      60
+---Menu---
+1. Insert
+2. Display in forward order
+3. Display in Reverse order
+Enter your choice: 3
+        60      36      25      10      5
+************************************/
