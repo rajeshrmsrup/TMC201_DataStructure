@@ -57,10 +57,10 @@ int main(){
             display(q, front, rear);
             break;
         case 2:
+            front = deQue(q, front, rear);
             if(front == -1){
                 rear=-1;
             }
-            front = deQue(q, front, rear);
             break;
         case 3:
             display(q, front, rear);
