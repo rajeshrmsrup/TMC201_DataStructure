@@ -48,7 +48,7 @@ node *insert(node *front, node *rear, int num){
         rear = p;
     }
     else{
-        (rear)->next = p;
+        rear->next = p;
         rear = p;
     }
     return rear;
