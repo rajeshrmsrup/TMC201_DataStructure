@@ -1,4 +1,12 @@
 //Program to implement BST using Double pointer.
+/*
+    1. Insert
+    2. InOrder
+    3. PreOrder
+    4. PostOrder
+    5. Count Nodes
+    6. Count Leaf Nodes
+*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct BT{
@@ -8,15 +16,17 @@ typedef struct BT{
 }node;
 //Function Declarations..
 void insert(node **, int);
-void preOrder(node *);
 void inOrder(node *);
+void preOrder(node *);
 void postOrder(node *);
+void cntNode(node *, int *);
+void cntLeafNode(node *, int *);
 //Main function
 int main(){
-    int ch, num;
+    int ch, num, cnt=0;
     node *root=NULL;
     do{
-        printf("\n---Menu---\n1. Insert\n2. InOrder\n3. PreOrder\n4. PostOrder\n");
+        printf("\n---Menu---\n1. Insert\n2. InOrder\n3. PreOrder\n4. PostOrder\n5. Total no. of nodes\n6. Total no. of Leaf nodes\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
         switch(ch){
@@ -33,8 +43,19 @@ int main(){
             break;
         case 4:
             postOrder(root);
+            break;
+        case 5:
+            cntNode(root, &cnt);
+            printf("Total nodes = %d\n", cnt);
+            cnt=0;
+            break;
+        case 6:
+            cntLeafNode(root, &cnt);
+            printf("Total leaf nodes = %d\n", cnt);
+            cnt=0;
+            break;
         }
-    }while(ch <= 4);
+    }while(ch <= 6);
 }
 //Function Definitions...
 //1. Function for insert.
@@ -83,12 +104,32 @@ void postOrder(node *root){
         printf("\t%d", root->info);
     }
 }
+//5. Function for CountNodes.
+void cntNode(node *root, int *cnt){
+    if(root != NULL){
+        (*cnt)++;
+        cntNode(root->left, cnt);
+        cntNode(root->right, cnt);
+    }
+}
+//6. Function for Count Leaf Nodes.
+void cntLeafNode(node *root, int *cnt){
+    if(root != NULL){
+        cntLeafNode(root->left, cnt);
+        if(root->left==NULL && root->right==NULL){
+            (*cnt)++;
+        }
+        cntLeafNode(root->right, cnt);
+    }
+}
 /***************OUTPUT***************
 ---Menu---
 1. Insert
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 1
 Enter an element: 50
 
@@ -97,6 +138,8 @@ Enter an element: 50
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 1
 Enter an element: 40
 
@@ -105,14 +148,8 @@ Enter an element: 40
 2. InOrder
 3. PreOrder
 4. PostOrder
-Enter your choice: 1
-Enter an element: 45
-
----Menu---
-1. Insert
-2. InOrder
-3. PreOrder
-4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 1
 Enter an element: 60
 
@@ -121,14 +158,18 @@ Enter an element: 60
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 1
-Enter an element: 43
+Enter an element: 45
 
 ---Menu---
 1. Insert
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 1
 Enter an element: 55
 
@@ -137,6 +178,18 @@ Enter an element: 55
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
+Enter your choice: 1
+Enter an element: 43
+
+---Menu---
+1. Insert
+2. InOrder
+3. PreOrder
+4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 2
         40      43      45      50      55      60
 ---Menu---
@@ -144,6 +197,8 @@ Enter your choice: 2
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 3
         50      40      45      43      60      55
 ---Menu---
@@ -151,6 +206,8 @@ Enter your choice: 3
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 4
         43      45      40      55      60      50
 ---Menu---
@@ -158,5 +215,18 @@ Enter your choice: 4
 2. InOrder
 3. PreOrder
 4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
 Enter your choice: 5
+Total nodes = 6
+
+---Menu---
+1. Insert
+2. InOrder
+3. PreOrder
+4. PostOrder
+5. Total no. of nodes
+6. Total no. of Leaf nodes
+Enter your choice: 6
+Total leaf nodes = 2
 ************************************/
