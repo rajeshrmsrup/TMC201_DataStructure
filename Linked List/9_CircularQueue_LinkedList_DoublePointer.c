@@ -56,15 +56,16 @@ void serve(node **left, node **right){
         printf("\tCircular Queue is Empty\n");
     else{
         printf("\tServed element is %d", (*left)->info);
-        if(*left == *right)
+        if(*left == *right){
             *left = NULL;
+            *right = NULL;
+        }
         else{
             *left = (*left)->next;
             (*right)->next = *left;
         }
         free(tmp);
     }
-    return left;
 }
 //Function for display.
 void display(node *left){
