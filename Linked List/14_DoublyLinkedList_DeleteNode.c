@@ -9,7 +9,7 @@ typedef struct DLL{
 //Function Declarations...
 void insert(node **, node **, int);
 void deleteNode(node **, node **, int);
-void display(node *, node *);
+void display(node *);
 int main(){
     int ch, num, key;
     node *left=NULL, *right=NULL;
@@ -36,7 +36,7 @@ int main(){
             if(left == NULL)
             printf("\tList is empty\n");
          else
-            display(left, right);
+            display(left);
          }
     }while(ch<=3);
 }
@@ -95,7 +95,7 @@ void deleteNode(node **left, node **right, int key){
     free(tmp);
 }
 //Function for display.
-void display(node *left, node *right){
+void display(node *left){
     while(left != NULL){
         printf("\t%d", left->info);
         left = left->next;
