@@ -5,33 +5,33 @@
 void bSort(int [], int);
 //Main Function.
 int main(){
-    int n, i, ar[MAX];
+    int n, i, a[MAX];
     printf("Enter the size of an array: ");
     scanf("%d", &n);
 
     printf("\n---Enter %d elements---\n", n);
     for(i=0; i<n; i++)
-        scanf("%d", &ar[i]);
+        scanf("%d", &a[i]);
 
     printf("Before Sorting =");
     for(i=0; i<n; i++)
-        printf(" %d", ar[i]);
+        printf(" %d", a[i]);
 
     //Function call for Bubble Sort.
-    bSort(ar, n);
+    bSort(a, n);
     printf("\nAfter Sorting = ");
     for(i=0; i<n; i++)
-        printf(" %d", ar[i]);
+        printf(" %d", a[i]);
 }
 //Function definition for Bubble Sort.
-void bSort(int ar[], int n){
+void bSort(int a[], int n){
     int i, j, tmp;
     for(i=0; i<n-1; i++){
         for(j=0; j<n-1-i; j++){
-            if(ar[j] > ar[j+1]){
-                tmp = ar[j];
-                ar[j] = ar[j+1];
-                ar[j+1] = tmp;
+            if(a[j] > a[j+1]){
+                tmp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = tmp;
             }
         }
     }
