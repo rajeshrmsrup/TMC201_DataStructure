@@ -26,7 +26,7 @@ int main(){
 //Function definition for Insertion Sort.
 void insertionSort(int ar[], int n){
     int i, j, tmp;
-    for(i=i; i<n; i++){
+    for(i=1; i<n; i++){
         j = i-1;
         tmp = ar[i];
         while(j>=0 && tmp<ar[j]){
