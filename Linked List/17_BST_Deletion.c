@@ -1,4 +1,4 @@
-//Program to implement BST using Double pointer and perform Deletion operation.
+//Program to implement BST and perform Deletion operation.
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct BT{
