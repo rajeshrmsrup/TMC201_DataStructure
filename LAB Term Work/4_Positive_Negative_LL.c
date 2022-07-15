@@ -3,12 +3,6 @@ Program to create two link lists positive and negative from a Original linked li
 linked list contains all positive elements and negative linked list contains negative elements.
 Positive and negative linked lists should use the node of existing original linked list.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct PosNegElementQ{
