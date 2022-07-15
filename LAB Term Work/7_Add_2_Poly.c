@@ -1,10 +1,4 @@
 //Program to add of two polynomials of degree n, using linked list.
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct poly{
