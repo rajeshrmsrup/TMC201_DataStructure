@@ -2,12 +2,6 @@
 Program to store N elements to an array and then send all positive elements
 of the array to the end without altering the original sequence.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #define MAX 100
 //Function Declaration.
