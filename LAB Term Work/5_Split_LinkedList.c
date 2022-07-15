@@ -3,12 +3,6 @@ Program to create a linked list P, then write a function named "split" to create
 lists Q & R from P So that Q contains all elements in odd positions of P and R contains the
 remaining elements. Finally print both linked lists i.e. Q and R.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct SplitQ{
