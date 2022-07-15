@@ -1,12 +1,6 @@
 /*
 Program to implement linked representation of a graph in memory using array of pointers.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 #define V 6
