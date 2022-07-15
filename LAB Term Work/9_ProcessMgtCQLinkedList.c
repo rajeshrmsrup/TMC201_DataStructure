@@ -2,12 +2,6 @@
 Using circular Queue allocate time slots of 10ns for given processes in time sharing
 Environment and then print which process will be completed in how much time.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct CQ{
