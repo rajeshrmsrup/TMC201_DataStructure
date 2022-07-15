@@ -6,12 +6,6 @@ Program to create a binary search tree and perform following operations...
     4) Find height of a binary search tree.
     5) Count total numbers of nodes from right hand side of root node.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct BT{
