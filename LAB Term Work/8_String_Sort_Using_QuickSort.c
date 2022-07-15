@@ -2,12 +2,6 @@
 Program to sort an unsorted sequence of strings given by user in an array,
 using Quick sort technique.
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<string.h>
 #define MAX 10
