@@ -1,7 +1,6 @@
 /*
 Program to find union (of two linked lists) based on their information field that implements
 singly linked list (with information field Emp_Id and Name of employee for each node).
-
 */
 #include<stdio.h>
 typedef struct UnionEmp{
