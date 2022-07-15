@@ -3,12 +3,6 @@ Program to find union (of two linked lists) based on their information field tha
 singly linked list (with information field Emp_Id and Name of employee for each node).
 
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 typedef struct UnionEmp{
     int emp_id;
