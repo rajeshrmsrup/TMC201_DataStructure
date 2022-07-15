@@ -1,13 +1,7 @@
 /*
-program to create a new Linked List ‘S’ that contains elements alternately from A and B
+program to create a new Linked List â€˜Sâ€™ that contains elements alternately from A and B
 beginning with the first element of A. If you run out of elements in one of the lists,
 then append the remaining.
-*/
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
 */
 #include<stdio.h>
 #include<stdlib.h>
