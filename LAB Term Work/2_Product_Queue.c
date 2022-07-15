@@ -6,12 +6,6 @@ should have the following information about a product...
     ->Total_sale(integer)
     ->Product_Grade(Char)
 */
-/*
-Name:           Rajesh Kumar
-Roll No:        31
-Course/Sem:     MCA-2nd
-Sec:            B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Product{
